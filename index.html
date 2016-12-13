@@ -9,14 +9,27 @@
 			<h1> Bootstrap stuff </h1>
 		</div>
 		<div class="jumbotron">
-		<p> I'm inside a JUMBOTRON </p>
+			<p> I'm inside a JUMBOTRON </p>
+		</div>
+		<div class="well well-sm">
+			<p> I'm inside a well (well-sm) </p>
+			<span class="text-muted"> Muted text </span>
+			<span class="text-success"> Success text </span>
+			<span class="text-info"> Info text </span>
+			<span class="text-warning"> Warning text </span>
+			<span class="text-danger"> Danger text </span>
+			<span class="bg-muted"> Muted background </span>
+			<span class="bg-success"> Success background </span>
+			<span class="bg-info"> Info background </span>
+			<span class="bg-warning"> Warning background </span>
+			<span class="bg-danger"> Danger background </span>
 		</div>
 		<a href="#" class="btn btn-default btn-lg" role="button"> Large default button </a>
 		<a href="#" class="btn btn-primary" role="button"> Medium primary button </a>
-		<a href="#" class="btn btn-success btn-sm" role="button"> Small success button </a>
-		<a href="#" class="btn btn-warning btn-xs" role="button"> Xtrasmall warning button </a>
-		<a href="#" class="btn btn-danger btn-lg" role="button"> Large danger button </a>
-		<a href="#" class="btn btn-danger btn-link" role="button"> Link button </a>
+		<a href="#" class="btn btn-success btn-sm" role="button">Small success button <span class="glyphicon glyphicon-ok"></span></a>
+		<a href="#" class="btn btn-warning btn-xs" role="button"><span class="glyphicon glyphicon-zoom-out"></span> Xtrasmall warning button </a>
+		<a href="#" class="btn btn-danger btn-lg" role="button"><span class="glyphicon glyphicon-fire"></span> Large danger button </a>
+		<a href="#" class="btn btn-danger btn-link" role="button"> Link button <span class="glyphicon glyphicon-new-window"></span></a>
 		<div class="btn-group btn-group-lg" role="group">
 			<button type="button" class="btn btn-default">One</button>
 			<button type="button" class="btn btn-default">Two</button>
@@ -24,7 +37,7 @@
 		</div>
 		<div class="dropdown">
 			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Dropdown that doesn't work
+			Dropdown
 			<span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -36,45 +49,57 @@
 			</ul>
 		</div>
 		<div id="theCarousel" class="carousel slide span12" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#theCarousel" data-slide-to="1"></li>
-			<li data-target="#theCarousel" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="item active">
-				<img src="public/images/1.jpg"/>
-				<div class="slide1"></div>
-				<div class="carousel-caption">
-					<h1> Backgrounds n stuff </h1>
-					<p> Heckin cool backgrounds man </p>
-					<p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
+			<ol class="carousel-indicators">
+				<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#theCarousel" data-slide-to="1"></li>
+				<li data-target="#theCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="public/images/1.jpg"/>
+					<div class="slide1"></div>
+					<div class="carousel-caption">
+						<h1> Backgrounds n stuff </h1>
+						<p> Heckin cool backgrounds man </p>
+						<p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="public/images/2.jpg"/>
+					<div class="slide2"></div>
+					<div class="carousel-caption">
+						<h1> Backgrounds n stuff </h1>
+						<p> Check this one out my dude </p>
+						<p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="slide3"></div>
+					<img src="public/images/3.jpg"/>
+					<div class="carousel-caption">
+						<h1> Backgrounds n stuff </h1>
+						<p> So cool xD! </p>
+						<p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
+					</div>
 				</div>
 			</div>
-			<div class="item">
-				<img src="public/images/2.jpg"/>
-				<div class="slide2"></div>
-				<div class="carousel-caption">
-					<h1> Backgrounds n stuff </h1>
-					<p> Check this one out my dude </p>
-					<p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
-				</div>
-			</div>
-			<div class="item">
-				<div class="slide3"></div>
-				<img src="public/images/3.jpg"/>
-				<div class="carousel-caption">
-					<h1> Backgrounds n stuff </h1>
-					<p> So cool xD! </p>
-					<p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
-				</div>
-			</div>
+			<a class="left carousel-control" href="#theCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="right carousel-control" href="#theCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span></a>
 		</div>
-		<a class="left carousel-control" href="#theCarousel" data-slide="prev">
-		<span class="glyphicon glyphicon-chevron-left"></span></a>
-		<a class="right carousel-control" href="#theCarousel" data-slide="next">
-		<span class="glyphicon glyphicon-chevron-right"></span></a>
-	</div>
+		<h2> Form stuff </h2>
+		<div class="input-group input-group-lg">
+			<span class="input-group-addon"> Your name</span>
+			<input type="text" class="form-control" placeholder="Full Name">
+		</div>
+		<br>
+		<div class="input-group input-group-sm">
+			<input type="text" class="form-control" placeholder="Full Name">
+			<span class="input-group-btn">
+				<button class="btn btn-default"> Enter </button>
+			</span>
+		</div>
 	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="public/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
